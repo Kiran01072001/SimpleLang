@@ -1,12 +1,12 @@
-a DB 0
-b DB 0
-c DB 0
-MOV a, 10
-MOV b, 20
-MOV c, a
-ADD c, b
-CMP c, 30
+x DB 0
+y DB 0
+z DB 0
+MOV x, 10
+MOV y, 20
+MOV z, x
+ADD z, y
+CMP z, 30
 JNZ END_IF
-MOV c, c
-ADD c, 1
+MOV z, z
+ADD z, 1
 END_IF:
