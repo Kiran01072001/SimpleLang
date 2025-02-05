@@ -1,7 +1,8 @@
 #include "Parsing.c"
 
 void generate_assembly() 
-{
+{   
+    // writing the assembly instructions
     FILE *file = fopen("output.asm", "w"); // Automatically generated once compile
 
     
