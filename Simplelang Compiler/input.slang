@@ -1,14 +1,14 @@
 // Variable declaration 
-int a;
-int b; 
-int c; 
+int x;
+int y; 
+int z; 
 
 // Assignment 
-a = 10; 
-b = 20; 
-c = a + b; 
+x = 10; 
+y = 20; 
+z = x + y; 
 
 // Conditional 
-if (c == 30) { 
-    c = c + 1; 
+if (z == 30) { 
+    z = z + 1; 
 }
