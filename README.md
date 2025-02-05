@@ -1,4 +1,4 @@
-                                                                            # SimpleLang Compiler
+                                         # SimpleLang Compiler
 
 This project implements a simple compiler for a custom language called **SimpleLang**. It processes a SimpleLang source code and generates an assembly output.
 
@@ -14,18 +14,18 @@ This project implements a simple compiler for a custom language called **SimpleL
 
 ```plaintext
 // Variable declaration 
-int a;
-int b; 
-int c; 
+int x;
+int y; 
+int z; 
 
 // Assignment 
-a = 10; 
-b = 20; 
-c = a + b; 
+x = 10; 
+y = 20; 
+z = x + y; 
 
 // Conditional 
-if (c == 30) { 
-    c = c + 1; 
+if (z == 30) { 
+    z = z + 1; 
 }
 
 
@@ -42,15 +42,15 @@ Run the compiler:
 
 The generated assembly code will be written to output.asm.
 
-a DB 0
-b DB 0
-c DB 0
-MOV a, 10
-MOV b, 20
-MOV c, a
-ADD c, b
-CMP c, 30
+x DB 0
+y DB 0
+z DB 0
+MOV x, 10
+MOV y, 20
+MOV z, x
+ADD z, y
+CMP z, 30
 JNZ END_IF
-MOV c, c
-ADD c, 1
+MOV z, z
+ADD z, 1
 END_IF:
