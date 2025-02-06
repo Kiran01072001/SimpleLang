@@ -1,6 +1,6 @@
-x DB 0
-y DB 0
-z DB 0
+x DW 0
+y DW 0
+z DW 0
 MOV x, 10
 MOV y, 20
 MOV z, x
