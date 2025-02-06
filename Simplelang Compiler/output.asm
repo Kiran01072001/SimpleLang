@@ -6,7 +6,7 @@ MOV y, 20
 MOV z, x
 ADD z, y
 CMP z, 30
-JNZ END_IF
+JNZ SKIP_IF
 MOV z, z
 ADD z, 1
-END_IF:
+SKIP_IF:
