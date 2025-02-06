@@ -42,15 +42,15 @@ Run the compiler:
 
 The generated assembly code will be written to output.asm.
 
-x DB 0
-y DB 0
-z DB 0
+x DW 0
+y DW 0
+z DW 0
 MOV x, 10
 MOV y, 20
 MOV z, x
 ADD z, y
 CMP z, 30
-JNZ END_IF
+JNZ SKIP_IF
 MOV z, z
 ADD z, 1
-END_IF:
+SKIP_IF:
