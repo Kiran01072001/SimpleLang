@@ -3,8 +3,8 @@
 void read_file(const char *filename, char *buffer) 
 
 {
-    FILE *file = fopen(filename, "r");
-    if (!file) {
+    FILE *assemblyFile = fopen(filename, "r");
+    if (!assemblyFile) {
         printf("Can not open the file.\n");
 
 
@@ -15,7 +15,7 @@ void read_file(const char *filename, char *buffer)
     
     fread(buffer, sizeof(char), 1000, file);
     
-    fclose(file);
+    fclose(assemblyFile);
 }
 
 int main() 
