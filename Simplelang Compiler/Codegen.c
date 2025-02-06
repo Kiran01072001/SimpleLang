@@ -23,14 +23,14 @@ void generate_assembly()
             (strcmp(ast[index]->type, "IF_STATEMENT") == 0) 
         
         {
-            fprintf(assemblyFile, "CMP %s, 30\nJNZ END_IF\n", ast[index]->children[0]->value);
+            fprintf(assemblyFile, "CMP %s, 30\nJNZ SKIP_IF\n", ast[index]->children[0]->value);
 
             
             fprintf(assemblyFile, "MOV %s, %s\n", ast[index]->children[1]->children[0]->value,
                     ast[index]->children[1]->children[0]->children[0]->value);
 
             
-            fprintf(assemblyFile, "END_IF:\n");
+            fprintf(assemblyFile, "SKIP_IF:\n");
         }
     }
 
